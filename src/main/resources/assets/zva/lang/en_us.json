@@ -1,6 +1,10 @@
 {
   "itemgroup.zva.creativetab_1": "Assassins Arsenal",
       "item.zva.hidden_knife": "Assassins Knife",
-      "tooltip.zva.hidden_knife": "§9Sneak§r to extend"
+      "tooltip.zva.hidden_knife": "Sneak to extend",
+
+
+
+  "death.attack.assassinated.message": "<SirYanis07> Tschüssi"
 
 }
