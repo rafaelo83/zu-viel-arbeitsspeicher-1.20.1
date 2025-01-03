@@ -5,6 +5,9 @@ import de.rafaelo83.zva.item.ModItems;
 import de.rafaelo83.zva.util.ModModelPredicates;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
