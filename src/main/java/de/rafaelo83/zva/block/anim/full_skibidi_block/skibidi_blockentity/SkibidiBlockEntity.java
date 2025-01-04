@@ -13,7 +13,7 @@ import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.RenderUtils;
 
 public class SkibidiBlockEntity extends BlockEntity implements GeoBlockEntity {
-    private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
+    private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
     public SkibidiBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.SKIBIDI_BLOCK_ENTITY, pos, state);
