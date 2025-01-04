@@ -1,16 +1,23 @@
 package de.rafaelo83.zva.block;
 
 import de.rafaelo83.zva.ZuVielArbeitsspeicher;
+import de.rafaelo83.zva.block.anim.full_skibidi_block.skibidi_block.SkibidiBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
+
+    public static final Block SKIBIDI_BLOCK = registerBlock("skibidi_block",
+            new SkibidiBlock(AbstractBlock.Settings.create().strength(4f).sounds(BlockSoundGroup.AMETHYST_BLOCK).nonOpaque()));
+
 
 
     private static Block registerBlock(String name, Block block) {

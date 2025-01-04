@@ -1,15 +1,17 @@
 package de.rafaelo83.zva;
 
+import de.rafaelo83.zva.block.ModBlockEntities;
+import de.rafaelo83.zva.block.ModBlocks;
+import de.rafaelo83.zva.block.anim.full_skibidi_block.skibidi_blockentity.client.SkibidiBlockRenderer;
 import de.rafaelo83.zva.item.ModItemGroups;
 import de.rafaelo83.zva.item.ModItems;
 import de.rafaelo83.zva.util.ModModelPredicates;
 import net.fabricmc.api.ModInitializer;
 
-import net.minecraft.entity.effect.StatusEffect;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import software.bernie.geckolib.GeckoLib;
 
 public class ZuVielArbeitsspeicher implements ModInitializer {
 	public static final String MOD_ID = "zva";
@@ -22,7 +24,13 @@ public class ZuVielArbeitsspeicher implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModBlockEntities.registerAllBlockEntities();
+
 		ModItemGroups.registerItemGroups();
+
+		BlockEntityRendererFactories.register(ModBlockEntities.SKIBIDI_BLOCK_ENTITY, SkibidiBlockRenderer::new);
+		GeckoLib.initialize();
 
 		ModModelPredicates.registerModelPredicates();
 
