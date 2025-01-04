@@ -1,26 +1,41 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.idle": {
+		"idle": {
 			"loop": true,
 			"animation_length": 2,
 			"bones": {
-				"bone": {
+				"ausschub": {
 					"position": {
 						"0.0": {
 							"vector": [0, 0, 0]
 						},
 						"1.0": {
-							"vector": [0, 4, 0],
-							"easing": "easeInBack"
+							"vector": [-8, 0, 0]
+						}
+					},
+					"scale": {
+						"0.0": {
+							"vector": [1, 1, 1]
 						},
-						"2.0": {
-							"vector": [0, 0, 0],
-							"easing": "easeInExpo"
+						"0.25": {
+							"vector": [2, 1, 1.9]
+						}
+					}
+				},
+				"deckel": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.25": {
+							"vector": [0, 0, 102.5],
+							"easing": "easeInElastic"
 						}
 					}
 				}
 			}
 		}
-	}
+	},
+	"geckolib_format_version": 2
 }

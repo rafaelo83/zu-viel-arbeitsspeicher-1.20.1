@@ -25,7 +25,7 @@ public class SkibidiBlockEntity extends BlockEntity implements GeoBlockEntity {
     }
 
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
-        tAnimationState.getController().setAnimation(RawAnimation.begin().then("idle", Animation.LoopType.LOOP));
+        tAnimationState.getController().setAnimation(RawAnimation.begin().then("idle", Animation.LoopType.HOLD_ON_LAST_FRAME));
         return PlayState.CONTINUE;
     }
 
@@ -38,4 +38,6 @@ public class SkibidiBlockEntity extends BlockEntity implements GeoBlockEntity {
     public double getTick(Object blockEntity) {
         return RenderUtils.getCurrentTick();
     }
+
+
 }

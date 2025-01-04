@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
 
     public static final ItemGroup ASSASSINS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(ZuVielArbeitsspeicher.MOD_ID, "zva"),
+            Identifier.of(ZuVielArbeitsspeicher.MOD_ID, "zva_1"),
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(ModItems.HIDDEN_KNIFE))
                     .displayName(Text.translatable("itemgroup.zva.creativetab_1"))
@@ -23,7 +23,7 @@ public class ModItemGroups {
                     })
                     .build());
     public static final ItemGroup BRAINROT_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(ZuVielArbeitsspeicher.MOD_ID, "zva"),
+            Identifier.of(ZuVielArbeitsspeicher.MOD_ID, "zva_2"),
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(ModBlocks.SKIBIDI_BLOCK))
                     .displayName(Text.translatable("itemgroup.zva.creativetab_2"))
