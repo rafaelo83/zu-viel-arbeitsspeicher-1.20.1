@@ -11,10 +11,12 @@ import net.minecraft.util.Identifier;
 public class ModBlockEntities {
     public static BlockEntityType<SkibidiBlockEntity> SKIBIDI_BLOCK_ENTITY;
 
-    public static void registerAllBlockEntities(){
+    public static void registerAllBlockEntities() {
+
         SKIBIDI_BLOCK_ENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 new Identifier(ZuVielArbeitsspeicher.MOD_ID, "skibidi_block_entity"),
                 FabricBlockEntityTypeBuilder.create(SkibidiBlockEntity::new,
                         ModBlocks.SKIBIDI_BLOCK).build());
+        
     }
 }

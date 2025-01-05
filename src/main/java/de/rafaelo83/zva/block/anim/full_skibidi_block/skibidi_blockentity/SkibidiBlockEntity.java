@@ -7,7 +7,10 @@ import net.minecraft.util.math.BlockPos;
 import software.bernie.geckolib.animatable.GeoBlockEntity;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
-import software.bernie.geckolib.core.animation.*;
+import software.bernie.geckolib.core.animation.AnimatableManager;
+import software.bernie.geckolib.core.animation.Animation;
+import software.bernie.geckolib.core.animation.AnimationController;
+import software.bernie.geckolib.core.animation.RawAnimation;
 import software.bernie.geckolib.util.RenderUtils;
 
 public class SkibidiBlockEntity extends BlockEntity implements GeoBlockEntity {
@@ -19,11 +22,10 @@ public class SkibidiBlockEntity extends BlockEntity implements GeoBlockEntity {
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
-        controllerRegistrar.add(new AnimationController<>(this,state -> {
-            if(getWorld().isReceivingRedstonePower(this.getPos())){
+        controllerRegistrar.add(new AnimationController<>(this, state -> {
+            if (getWorld().isReceivingRedstonePower(this.getPos())) {
                 return state.setAndContinue(RawAnimation.begin().thenPlayAndHold("active"));
-            }
-            else return state.setAndContinue(RawAnimation.begin().then("non_active", Animation.LoopType.PLAY_ONCE));
+            } else return state.setAndContinue(RawAnimation.begin().then("non_active", Animation.LoopType.PLAY_ONCE));
         }));
     }
 

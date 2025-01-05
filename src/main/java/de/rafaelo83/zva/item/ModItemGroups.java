@@ -6,7 +6,6 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -21,13 +20,13 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.zva.creativetab_1"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.HIDDEN_KNIFE);
+                        entries.add(ModItems.SPARE_BLADE);
                         entries.add(ModBlocks.SKIBIDI_BLOCK);
                     })
                     .build());
 
 
-
-    public static void registerItemGroups(){
+    public static void registerItemGroups() {
         ZuVielArbeitsspeicher.LOGGER.info("Registering Item Groups for " + ZuVielArbeitsspeicher.MOD_ID);
     }
 }

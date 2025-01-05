@@ -8,17 +8,17 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 public class ModTags {
-    public static class Blocks{
+    public static class Blocks {
 
-        private static TagKey<Block> createTag(String name){
+        private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(ZuVielArbeitsspeicher.MOD_ID, name));
         }
     }
 
-    public static class Items{
+    public static class Items {
 
 
-        private static TagKey<Item> createTag(String name){
+        private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(ZuVielArbeitsspeicher.MOD_ID, name));
         }
     }

@@ -5,7 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Blocks;
 
-public class ModLootTableProvider extends FabricBlockLootTableProvider{
+public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     public ModLootTableProvider(FabricDataOutput dataOutput) {
         super(dataOutput);

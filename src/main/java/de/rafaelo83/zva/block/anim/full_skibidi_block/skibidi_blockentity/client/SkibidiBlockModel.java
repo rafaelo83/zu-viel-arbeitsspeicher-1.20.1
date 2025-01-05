@@ -6,8 +6,6 @@ import net.minecraft.util.Identifier;
 import software.bernie.geckolib.model.DefaultedBlockGeoModel;
 
 public class SkibidiBlockModel extends DefaultedBlockGeoModel<SkibidiBlockEntity> {
-
-
     public SkibidiBlockModel() {
         super(Identifier.of(ZuVielArbeitsspeicher.MOD_ID, "skibidi_block"));
     }

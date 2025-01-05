@@ -1,7 +1,10 @@
 package de.rafaelo83.zva.block.anim.full_skibidi_block.skibidi_block;
 
 import de.rafaelo83.zva.block.anim.full_skibidi_block.skibidi_blockentity.SkibidiBlockEntity;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockRenderType;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.BlockWithEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
@@ -13,7 +16,7 @@ import org.jetbrains.annotations.Nullable;
 public class SkibidiBlock extends BlockWithEntity {
     public SkibidiBlock(Settings settings) {
         super(settings);
-        setDefaultState(getDefaultState().with(Properties.HORIZONTAL_FACING,Direction.NORTH));
+        setDefaultState(getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
     }
 
     @Override
@@ -23,7 +26,7 @@ public class SkibidiBlock extends BlockWithEntity {
 
     @Override
     public BlockRenderType getRenderType(BlockState state) {
-        return BlockRenderType.ENTITYBLOCK_ANIMATED;
+        return BlockRenderType.MODEL;
     }
 
     @Override
@@ -32,7 +35,7 @@ public class SkibidiBlock extends BlockWithEntity {
     }
 
     @Override
-    public BlockState getPlacementState(ItemPlacementContext context){
+    public BlockState getPlacementState(ItemPlacementContext context) {
         return super.getPlacementState(context).with(net.minecraft.state.property.Properties.HORIZONTAL_FACING, context.getHorizontalPlayerFacing().getOpposite());
     }
 }

@@ -1,6 +1,5 @@
 package de.rafaelo83.zva.util;
 
-import com.mojang.authlib.yggdrasil.request.AbuseReportRequest;
 import de.rafaelo83.zva.ZuVielArbeitsspeicher;
 import de.rafaelo83.zva.item.ModItems;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
@@ -15,8 +14,6 @@ public class ModModelPredicates {
                                 (entity.isSneaking()
                                         && (entity.getMainHandStack().isOf(ModItems.HIDDEN_KNIFE)
                                         || entity.getOffHandStack().isOf(ModItems.HIDDEN_KNIFE)) ? 1f : 0f) : 1f));
-
-
 
     }
 }

@@ -16,8 +16,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block SKIBIDI_BLOCK = registerBlock("skibidi_block",
-            new SkibidiBlock(AbstractBlock.Settings.create().strength(4f).sounds(BlockSoundGroup.STONE).nonOpaque().hardness(0.8f).requiresTool()));
-
+            new SkibidiBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).nonOpaque().hardness(0.8f).requiresTool()));
 
 
     private static Block registerBlock(String name, Block block) {
@@ -31,7 +30,7 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        ZuVielArbeitsspeicher.LOGGER.info("Registering ModBlocks for " + ZuVielArbeitsspeicher.MOD_ID);
+        ZuVielArbeitsspeicher.LOGGER.info("Registering Blocks for " + ZuVielArbeitsspeicher.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             //entries.add(ModBlocks.BLUE_PLANKS);
