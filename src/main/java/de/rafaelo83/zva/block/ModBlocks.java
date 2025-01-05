@@ -16,7 +16,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block SKIBIDI_BLOCK = registerBlock("skibidi_block",
-            new SkibidiBlock(AbstractBlock.Settings.create().strength(4f).sounds(BlockSoundGroup.AMETHYST_BLOCK).nonOpaque()));
+            new SkibidiBlock(AbstractBlock.Settings.create().strength(4f).sounds(BlockSoundGroup.STONE).nonOpaque().hardness(0.8f)));
 
 
 
