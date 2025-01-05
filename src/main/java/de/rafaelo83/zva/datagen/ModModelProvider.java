@@ -14,7 +14,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator generator) {
-        generator.registerSimpleCubeAll(ModBlocks.SKIBIDI_BLOCK);
+
     }
 
     @Override

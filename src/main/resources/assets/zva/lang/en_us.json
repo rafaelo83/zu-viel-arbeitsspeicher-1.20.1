@@ -1,10 +1,12 @@
 {
-  "itemgroup.zva.creativetab_1": "Assassins Arsenal",
+  "itemgroup.zva.creativetab_1": "§kCRASH: Zu viel Arbeitsspeicher§r",
       "item.zva.hidden_knife": "Assassins Knife",
       "tooltip.zva.hidden_knife": "Sneak to extend",
 
+      "block.zva.skibidi_block": "Normal Quartz Block",
 
 
-  "death.attack.assassinated.message": "<SirYanis07> Tschüssi"
+
+  "death.attack.assassinated.message": "§kSirYanis07§r left"
 
 }
