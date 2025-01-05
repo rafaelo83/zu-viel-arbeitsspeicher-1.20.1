@@ -33,6 +33,6 @@ public class ZuVielArbeitsspeicher implements ModInitializer {
 
         ModModelPredicates.registerModelPredicates();
 
-        LOGGER.info("Hello Fabric world!");
+        LOGGER.info("Registering and initializing everything for ZuVielArbeitsspeicher");
     }
 }

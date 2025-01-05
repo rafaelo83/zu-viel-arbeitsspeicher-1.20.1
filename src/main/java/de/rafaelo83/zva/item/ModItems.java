@@ -22,7 +22,5 @@ public class ModItems {
         return Registry.register(Registries.ITEM, Identifier.of(ZuVielArbeitsspeicher.MOD_ID, name), item);
     }
 
-    public static void registerModItems() {
-        ZuVielArbeitsspeicher.LOGGER.info("Registering Items for " + ZuVielArbeitsspeicher.MOD_ID);
-    }
+    public static void registerModItems() {}
 }

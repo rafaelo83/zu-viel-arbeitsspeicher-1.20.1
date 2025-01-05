@@ -20,13 +20,12 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.zva.creativetab_1"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.HIDDEN_KNIFE);
+                        entries.add(ModItems.BIG_HAMMER);
                         entries.add(ModItems.SPARE_BLADE);
                         entries.add(ModBlocks.SKIBIDI_BLOCK);
                     })
                     .build());
 
 
-    public static void registerItemGroups() {
-        ZuVielArbeitsspeicher.LOGGER.info("Registering Item Groups for " + ZuVielArbeitsspeicher.MOD_ID);
-    }
+    public static void registerItemGroups() {}
 }

@@ -29,12 +29,5 @@ public class ModBlocks {
                 new BlockItem(block, new Item.Settings()));
     }
 
-    public static void registerModBlocks() {
-        ZuVielArbeitsspeicher.LOGGER.info("Registering Blocks for " + ZuVielArbeitsspeicher.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            //entries.add(ModBlocks.BLUE_PLANKS);
-
-        });
-    }
+    public static void registerModBlocks() {}
 }
